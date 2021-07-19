@@ -5,7 +5,7 @@ package proxmoxiso
 import (
 	"errors"
 
-	proxmox "github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common"
+	proxmox "github.com/luxusv/packer-plugin-proxmox/builder/proxmox/common"
 	"github.com/hashicorp/packer-plugin-sdk/multistep/commonsteps"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
 )

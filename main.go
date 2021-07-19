@@ -7,8 +7,8 @@ import (
 	"github.com/hashicorp/packer-plugin-sdk/plugin"
 	"github.com/hashicorp/packer-plugin-sdk/version"
 
-	proxmoxclone "github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/clone"
-	proxmoxiso "github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/iso"
+	proxmoxclone "github.com/luxusv/packer-plugin-proxmox/builder/proxmox/clone"
+	proxmoxiso "github.com/luxusv/packer-plugin-proxmox/builder/proxmox/iso"
 )
 
 var (
@@ -28,8 +28,8 @@ var (
 func main() {
 	pps := plugin.NewSet()
 	pps.RegisterBuilder(plugin.DEFAULT_NAME, new(proxmoxiso.Builder))
-	pps.RegisterBuilder("proxmox-iso", new(proxmoxiso.Builder))
-	pps.RegisterBuilder("proxmox-clone", new(proxmoxclone.Builder))
+	pps.RegisterBuilder("prxmx-iso", new(proxmoxiso.Builder))
+	pps.RegisterBuilder("prxmx-clone", new(proxmoxclone.Builder))
 	pps.SetVersion(PluginVersion)
 	err := pps.Run()
 	if err != nil {

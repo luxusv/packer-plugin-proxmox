@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	common "github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common"
+	common "github.com/luxusv/packer-plugin-proxmox/builder/proxmox/common"
 	"github.com/hashicorp/packer-plugin-sdk/communicator/ssh"
 	"github.com/hashicorp/packer-plugin-sdk/multistep"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"

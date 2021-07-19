@@ -3,7 +3,7 @@
 package proxmoxclone
 
 import (
-	proxmox "github.com/hashicorp/packer-plugin-proxmox/builder/proxmox/common"
+	proxmox "github.com/luxusv/packer-plugin-proxmox/builder/proxmox/common"
 	packersdk "github.com/hashicorp/packer-plugin-sdk/packer"
 	"github.com/hashicorp/packer-plugin-sdk/template/config"
 )

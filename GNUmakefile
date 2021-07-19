@@ -1,4 +1,4 @@
-NAME=proxmox
+NAME=prxmx
 BINARY=packer-plugin-${NAME}
 
 COUNT?=1

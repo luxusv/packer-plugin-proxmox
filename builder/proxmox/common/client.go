@@ -8,7 +8,7 @@ import (
 	"github.com/Telmate/proxmox-api-go/proxmox"
 )
 
-const defaultTaskTimeout = 30 * time.Second
+const defaultTaskTimeout = 300 * time.Second
 
 func newProxmoxClient(config Config) (*proxmox.Client, error) {
 	tlsConfig := &tls.Config{
